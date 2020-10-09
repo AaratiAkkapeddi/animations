@@ -12,7 +12,7 @@ renderer.setSize(800, 700);
 renderer.sortObjects = false;
 document.body.appendChild(renderer.domElement);
 
-const loader = new THREE.TextureLoader().load( "text.png" );
+const loader = new THREE.TextureLoader().load( "motivate.png" );
 loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
 loader.offset.set(0,-0.2);
@@ -51,7 +51,7 @@ $(renderer.domElement).on('mousedown', function(e) {
         y: e.offsetY-previousMousePosition.y
     };
 
-    if(isDragging) {
+
             
         var deltaRotationQuaternion = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
@@ -77,8 +77,7 @@ $(renderer.domElement).on('mousedown', function(e) {
         cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
         cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
         cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
-    }
-    
+  
     previousMousePosition = {
         x: e.offsetX,
         y: e.offsetY
