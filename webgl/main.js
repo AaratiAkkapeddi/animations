@@ -26,7 +26,7 @@ loader.minFilter = THREE.LinearMipMapLinearFilter;
   const material = new THREE.MeshBasicMaterial({
     map: loader,
     side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.5
+    transparent: true, opacity: 1,alphaTest: 0.01
   });
 const loader2 = new THREE.TextureLoader().load( "inspire.png" );
 loader2.wrapS = THREE.RepeatWrapping;
@@ -40,7 +40,7 @@ loader2.minFilter = THREE.LinearMipMapLinearFilter;
   const material2 = new THREE.MeshBasicMaterial({
     map: loader2,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.5
+    transparent: true, opacity: 1,alphaTest: 0.01
   });
 const loader3 = new THREE.TextureLoader().load( "compose.png" );
 loader3.wrapS = THREE.RepeatWrapping;
@@ -53,7 +53,7 @@ loader3.minFilter = THREE.LinearMipMapLinearFilter;
   const material3 = new THREE.MeshBasicMaterial({
     map: loader3,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.5
+    transparent: true, opacity: 1,alphaTest: 0.01
   });
 const loader4 = new THREE.TextureLoader().load( "empathize.png" );
 loader4.wrapS = THREE.RepeatWrapping;
@@ -66,7 +66,7 @@ loader4.minFilter = THREE.LinearMipMapLinearFilter;
   const material4 = new THREE.MeshBasicMaterial({
     map: loader4,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.5
+    transparent: true, opacity: 1,alphaTest: 0.01
   });
 var geometry = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
 
