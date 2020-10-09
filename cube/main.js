@@ -134,4 +134,5 @@ document.addEventListener("mousemove", function(e){
 
 window.onload = function(){
     document.getElementById('loading').classList.add("off")
+    document.body.classList.remove('loading')
 }
