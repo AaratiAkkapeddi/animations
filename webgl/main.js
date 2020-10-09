@@ -267,6 +267,93 @@ loader18.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.001
   });
 
+const loader19 = new THREE.TextureLoader().load( "create.png" );
+loader19.wrapS = THREE.RepeatWrapping;
+loader19.wrapT = THREE.RepeatWrapping;
+loader19.offset.set(0,-0.2);
+loader19.repeat.set( 20, 1 );
+loader19.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader19.magFilter = THREE.NearestFilter;
+loader19.minFilter = THREE.LinearMipMapLinearFilter;
+  const material19 = new THREE.MeshBasicMaterial({
+    map: loader19,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+const loader20 = new THREE.TextureLoader().load( "understand.png" );
+loader20.wrapS = THREE.RepeatWrapping;
+loader20.wrapT = THREE.RepeatWrapping;
+loader20.offset.set(0,-0.2);
+loader20.repeat.set( 20, 1 );
+loader20.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader20.magFilter = THREE.NearestFilter;
+loader20.minFilter = THREE.LinearMipMapLinearFilter;
+  const material20 = new THREE.MeshBasicMaterial({
+    map: loader20,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+const loader21 = new THREE.TextureLoader().load( "investigate.png" );
+loader21.wrapS = THREE.RepeatWrapping;
+loader21.wrapT = THREE.RepeatWrapping;
+loader21.offset.set(0,-0.2);
+loader21.repeat.set( 20, 1 );
+loader21.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader21.magFilter = THREE.NearestFilter;
+loader21.minFilter = THREE.LinearMipMapLinearFilter;
+  const material21 = new THREE.MeshBasicMaterial({
+    map: loader21,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+const loader22 = new THREE.TextureLoader().load( "invent.png" );
+loader22.wrapS = THREE.RepeatWrapping;
+loader22.wrapT = THREE.RepeatWrapping;
+loader22.offset.set(0,-0.2);
+loader22.repeat.set( 20, 1 );
+loader22.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader22.magFilter = THREE.NearestFilter;
+loader22.minFilter = THREE.LinearMipMapLinearFilter;
+  const material22 = new THREE.MeshBasicMaterial({
+    map: loader22,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+const loader23 = new THREE.TextureLoader().load( "grow.png" );
+loader23.wrapS = THREE.RepeatWrapping;
+loader23.wrapT = THREE.RepeatWrapping;
+loader23.offset.set(0,-0.2);
+loader23.repeat.set( 20, 1 );
+loader23.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader23.magFilter = THREE.NearestFilter;
+loader23.minFilter = THREE.LinearMipMapLinearFilter;
+  const material23 = new THREE.MeshBasicMaterial({
+    map: loader23,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+const loader24 = new THREE.TextureLoader().load( "discover.png" );
+loader24.wrapS = THREE.RepeatWrapping;
+loader24.wrapT = THREE.RepeatWrapping;
+loader24.offset.set(0,-0.2);
+loader24.repeat.set( 20, 1 );
+loader24.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader24.magFilter = THREE.NearestFilter;
+loader24.minFilter = THREE.LinearMipMapLinearFilter;
+  const material24 = new THREE.MeshBasicMaterial({
+    map: loader24,
+     side: THREE.DoubleSide,
+    transparent: true, opacity: 1,alphaTest: 0.001
+  });
+
+
+
+
 var geometry = new THREE.SphereGeometry(3, 60, 60, 0, Math.PI * 2, 0, Math.PI * 2);
 
 var cube = new THREE.Mesh(geometry, material);
@@ -287,6 +374,12 @@ var cube15 = new THREE.Mesh(geometry, material15);
 var cube16 = new THREE.Mesh(geometry, material16);
 var cube17 = new THREE.Mesh(geometry, material17);
 var cube18 = new THREE.Mesh(geometry, material18);
+var cube19 = new THREE.Mesh(geometry, material19);
+var cube20 = new THREE.Mesh(geometry, material20);
+var cube21 = new THREE.Mesh(geometry, material21);
+var cube22 = new THREE.Mesh(geometry, material22);
+var cube23 = new THREE.Mesh(geometry, material23);
+var cube24 = new THREE.Mesh(geometry, material24);
 scene.add(cube);
 scene.add(cube2);
 scene.add(cube3);
@@ -305,6 +398,12 @@ scene.add(cube15);
 scene.add(cube16);
 scene.add(cube17);
 scene.add(cube18);
+scene.add(cube19);
+scene.add(cube20);
+scene.add(cube21);
+scene.add(cube22);
+scene.add(cube23);
+scene.add(cube24);
 
 
 /* */
@@ -451,6 +550,50 @@ $(renderer.domElement).on('mousedown', function(e) {
                 0,
                 'XYZ'
             ));
+        var deltaRotationQuaternion19 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -10),
+                toRadians(deltaMove.x * 1 - 180 ),
+                0,
+                'XYZ'
+            ));
+        var deltaRotationQuaternion20 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -20),
+                toRadians(deltaMove.x * 1 - 190 ),
+                0,
+                'XYZ'
+            ));
+        var deltaRotationQuaternion21 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -30),
+                toRadians(deltaMove.x * 1 - 200 ),
+                0,
+                'XYZ'
+            ));
+        var deltaRotationQuaternion22 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -40),
+                toRadians(deltaMove.x * 1 - 210 ),
+                0,
+                'XYZ'
+            ));
+
+        var deltaRotationQuaternion23 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -50),
+                toRadians(deltaMove.x * 1 - 220 ),
+                0,
+                'XYZ'
+            ));
+
+        var deltaRotationQuaternion24 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1 -60),
+                toRadians(deltaMove.x * 1 - 230 ),
+                0,
+                'XYZ'
+            ));
         cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
         cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
         cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
@@ -469,7 +612,12 @@ $(renderer.domElement).on('mousedown', function(e) {
   		cube16.quaternion.multiplyQuaternions(deltaRotationQuaternion16, cube.quaternion);
   		cube17.quaternion.multiplyQuaternions(deltaRotationQuaternion17, cube.quaternion);
   		cube18.quaternion.multiplyQuaternions(deltaRotationQuaternion18, cube.quaternion);
-  
+  		cube19.quaternion.multiplyQuaternions(deltaRotationQuaternion19, cube.quaternion);
+  		cube20.quaternion.multiplyQuaternions(deltaRotationQuaternion20, cube.quaternion);
+  		cube21.quaternion.multiplyQuaternions(deltaRotationQuaternion21, cube.quaternion);
+  		cube22.quaternion.multiplyQuaternions(deltaRotationQuaternion22, cube.quaternion);
+  		cube23.quaternion.multiplyQuaternions(deltaRotationQuaternion23, cube.quaternion);
+  		cube24.quaternion.multiplyQuaternions(deltaRotationQuaternion24, cube.quaternion);
     previousMousePosition = {
         x: e.offsetX,
         y: e.offsetY
