@@ -1,4 +1,5 @@
 var scene = new THREE.Scene();
+scene.background = new THREE.Color( 0x000000);
 var camera = new THREE.PerspectiveCamera(50, 500 / 400, 0.1, 1000);
 function toRadians(angle) {
 	return angle * (Math.PI / 180);
@@ -17,10 +18,14 @@ loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
 loader.offset.set(0,-0.2);
 loader.repeat.set( 22, 1 );
-loader.anisotropy = renderer.getMaxAnisotropy();
+loader.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader.magFilter = THREE.NearestFilter;
+loader.minFilter = THREE.LinearMipMapLinearFilter;
+
 
   const material = new THREE.MeshBasicMaterial({
     map: loader,
+    side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
 const loader2 = new THREE.TextureLoader().load( "inspire.png" );
@@ -28,10 +33,13 @@ loader2.wrapS = THREE.RepeatWrapping;
 loader2.wrapT = THREE.RepeatWrapping;
 loader2.offset.set(0,-0.2);
 loader2.repeat.set( 22, 1 );
-loader2.anisotropy = renderer.getMaxAnisotropy();
+loader2.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader2.magFilter = THREE.NearestFilter;
+loader2.minFilter = THREE.LinearMipMapLinearFilter;
 
   const material2 = new THREE.MeshBasicMaterial({
     map: loader2,
+     side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
 const loader3 = new THREE.TextureLoader().load( "compose.png" );
@@ -39,9 +47,12 @@ loader3.wrapS = THREE.RepeatWrapping;
 loader3.wrapT = THREE.RepeatWrapping;
 loader3.offset.set(0,-0.2);
 loader3.repeat.set( 22, 1 );
-loader3.anisotropy = renderer.getMaxAnisotropy();
+loader3.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader3.magFilter = THREE.NearestFilter;
+loader3.minFilter = THREE.LinearMipMapLinearFilter;
   const material3 = new THREE.MeshBasicMaterial({
     map: loader3,
+     side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
 const loader4 = new THREE.TextureLoader().load( "empathize.png" );
@@ -49,10 +60,12 @@ loader4.wrapS = THREE.RepeatWrapping;
 loader4.wrapT = THREE.RepeatWrapping;
 loader4.offset.set(0,-0.2);
 loader4.repeat.set( 20, 1 );
-loader4.anisotropy = renderer.getMaxAnisotropy();
-
+loader4.anisotropy = renderer.capabilities.getMaxAnisotropy();
+loader4.magFilter = THREE.NearestFilter;
+loader4.minFilter = THREE.LinearMipMapLinearFilter;
   const material4 = new THREE.MeshBasicMaterial({
     map: loader4,
+     side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
 var geometry = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
