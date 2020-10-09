@@ -1,8 +1,31 @@
 img{
-	width:100%;
-
-}
-.wrapper{
 	height:100vh;
-	
+	wdth:auto;
+	pointer-events: none;
+	-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+}
+img.off{
+	display: none;
+}
+body.loading img{
+	display: none;
+}
+h1{
+	color:white;
+	padding: 50px 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+h1.off{
+	display: none;
+}
+img{
+/*	filter:invert(1);*/
+}
+body{
+	margin:0;
+	background: black;
 }
