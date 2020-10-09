@@ -16,7 +16,8 @@ const loader = new THREE.TextureLoader().load( "motivate.png" );
 loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
 loader.offset.set(0,-0.2);
-loader.repeat.set( 12, 1 );
+loader.repeat.set( 22, 1 );
+loader.anisotropy = renderer.getMaxAnisotropy();
 
   const material = new THREE.MeshBasicMaterial({
     map: loader,
@@ -26,7 +27,8 @@ const loader2 = new THREE.TextureLoader().load( "inspire.png" );
 loader2.wrapS = THREE.RepeatWrapping;
 loader2.wrapT = THREE.RepeatWrapping;
 loader2.offset.set(0,-0.2);
-loader2.repeat.set( 12, 1 );
+loader2.repeat.set( 22, 1 );
+loader2.anisotropy = renderer.getMaxAnisotropy();
 
   const material2 = new THREE.MeshBasicMaterial({
     map: loader2,
@@ -36,24 +38,36 @@ const loader3 = new THREE.TextureLoader().load( "compose.png" );
 loader3.wrapS = THREE.RepeatWrapping;
 loader3.wrapT = THREE.RepeatWrapping;
 loader3.offset.set(0,-0.2);
-loader3.repeat.set( 12, 1 );
-
+loader3.repeat.set( 22, 1 );
+loader3.anisotropy = renderer.getMaxAnisotropy();
   const material3 = new THREE.MeshBasicMaterial({
     map: loader3,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
+const loader4 = new THREE.TextureLoader().load( "empathize.png" );
+loader4.wrapS = THREE.RepeatWrapping;
+loader4.wrapT = THREE.RepeatWrapping;
+loader4.offset.set(0,-0.2);
+loader4.repeat.set( 20, 1 );
+loader4.anisotropy = renderer.getMaxAnisotropy();
+
+  const material4 = new THREE.MeshBasicMaterial({
+    map: loader4,
+    transparent: true, opacity: 1,alphaTest: 0.5
+  });
 var geometry = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
-var geometry2 = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
-var geometry3 = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
-// var material = new THREE.MeshNormalMaterial();
+
 var cube = new THREE.Mesh(geometry, material);
-var cube2 = new THREE.Mesh(geometry2, material2);
+var cube2 = new THREE.Mesh(geometry, material2);
 cube2.rotation.y = 0.9;
-var cube3 = new THREE.Mesh(geometry3, material3);
+var cube3 = new THREE.Mesh(geometry, material3);
+cube3.rotation.x = 0.9;
+var cube4 = new THREE.Mesh(geometry, material4);
 cube3.rotation.x = 0.9;
 scene.add(cube);
 scene.add(cube2);
 scene.add(cube3);
+scene.add(cube4);
 
 /* */
 var isDragging = false;
@@ -94,9 +108,17 @@ $(renderer.domElement).on('mousedown', function(e) {
                 0,
                 'XYZ'
             ));
+        var deltaRotationQuaternion4 = new THREE.Quaternion()
+            .setFromEuler(new THREE.Euler(
+                toRadians(deltaMove.y * 1+150),
+                toRadians(deltaMove.x * 1+150),
+                0,
+                'XYZ'
+            ));
         cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
         cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
         cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+        cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion4, cube.quaternion);
   
     previousMousePosition = {
         x: e.offsetX,
