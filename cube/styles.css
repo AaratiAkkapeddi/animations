@@ -9,6 +9,9 @@ img{
 img.off{
 	display: none;
 }
+h1.off{
+	display: none;
+}
 img{
 	filter:invert(1);
 }

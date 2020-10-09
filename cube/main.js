@@ -131,3 +131,7 @@ document.addEventListener("mousemove", function(e){
         img.classList.remove('off')
     }
 });
+
+window.onload = function(){
+    document.getElementById('loading').classList.add("off")
+}
