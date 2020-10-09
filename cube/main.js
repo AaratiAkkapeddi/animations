@@ -12,7 +12,7 @@ function mapRange (value, a, b, c, d) {
     value = (value - a) / (b - a);
     return c + value * (d - c);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_0/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -21,7 +21,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_1/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -30,7 +30,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_2/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -39,7 +39,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_3/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -48,7 +48,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_4/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -57,7 +57,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_5/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -66,7 +66,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_6/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -75,7 +75,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_7/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -84,7 +84,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_8/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -93,7 +93,7 @@ for (var i = 181 - 1; i >= 0; i--) {
     var wrapper = document.getElementById("wrapper")
     wrapper.appendChild(img);
 }
-for (var i = 181 - 1; i >= 0; i--) {
+for (var i = 90 - 1; i >= 0; i--) {
     var imgstring = "cube_9/"+ i + ".png";
     var img = document.createElement("IMG");
     img.classList.add('off')
@@ -118,7 +118,7 @@ for (var i = 181 - 1; i >= 0; i--) {
 document.addEventListener("mousemove", function(e){
 	var x = e.x;
 	var y = e.y;
-	x = Math.floor(mapRange(x, 0, width, 0, 181))
+	x = Math.floor(mapRange(x, 0, width, 0, 90))
     y = Math.floor(mapRange(y, height, 0, 0, 10))
     console.log(y)
     if((x >=0 && x <= 180) && (y >= 0 && y <=9)){
