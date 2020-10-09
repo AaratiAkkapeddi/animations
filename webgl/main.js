@@ -16,10 +16,30 @@ const loader = new THREE.TextureLoader().load( "motivate.png" );
 loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
 loader.offset.set(0,-0.2);
-loader.repeat.set( 5, 1 );
+loader.repeat.set( 12, 1 );
 
   const material = new THREE.MeshBasicMaterial({
     map: loader,
+    transparent: true, opacity: 1,alphaTest: 0.5
+  });
+const loader2 = new THREE.TextureLoader().load( "inspire.png" );
+loader2.wrapS = THREE.RepeatWrapping;
+loader2.wrapT = THREE.RepeatWrapping;
+loader2.offset.set(0,-0.2);
+loader2.repeat.set( 12, 1 );
+
+  const material2 = new THREE.MeshBasicMaterial({
+    map: loader2,
+    transparent: true, opacity: 1,alphaTest: 0.5
+  });
+const loader3 = new THREE.TextureLoader().load( "compose.png" );
+loader3.wrapS = THREE.RepeatWrapping;
+loader3.wrapT = THREE.RepeatWrapping;
+loader3.offset.set(0,-0.2);
+loader3.repeat.set( 12, 1 );
+
+  const material3 = new THREE.MeshBasicMaterial({
+    map: loader3,
     transparent: true, opacity: 1,alphaTest: 0.5
   });
 var geometry = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
@@ -27,9 +47,9 @@ var geometry2 = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI *
 var geometry3 = new THREE.SphereGeometry(3, 70, 60, 0, Math.PI * 2, 0, Math.PI * 2);
 // var material = new THREE.MeshNormalMaterial();
 var cube = new THREE.Mesh(geometry, material);
-var cube2 = new THREE.Mesh(geometry2, material);
+var cube2 = new THREE.Mesh(geometry2, material2);
 cube2.rotation.y = 0.9;
-var cube3 = new THREE.Mesh(geometry3, material);
+var cube3 = new THREE.Mesh(geometry3, material3);
 cube3.rotation.x = 0.9;
 scene.add(cube);
 scene.add(cube2);
