@@ -443,35 +443,34 @@ var previousMousePosition = {
     y: 0
 };
 // $(renderer.domElement).on('mousemove',function(e){
-  // cube.rotation.z += 0.01
-  // cube2.rotation.z += 0.01
-  // cube3.rotation.z += 0.01
-  // cube4.rotation.z += 0.01
-  // cube5.rotation.z += 0.01
-  // cube6.rotation.z += 0.01
-  // cube7.rotation.z += 0.01
-  // cube8.rotation.z += 0.01
-  // cube9.rotation.z += 0.01
-  // cube10.rotation.z += 0.01
-  // cube11.rotation.z += 0.01
-  // cube12.rotation.z += 0.01
-  // cube13.rotation.z += 0.01
-  // cube14.rotation.z += 0.01
-  // cube15.rotation.z += 0.01
-  // cube16.rotation.z += 0.01
-  // cube17.rotation.z += 0.01
-  // cube18.rotation.z += 0.01
-  // cube19.rotation.z += 0.01
-  // cube20.rotation.z += 0.01
-  // cube21.rotation.z += 0.01
-  // cube22.rotation.z += 0.01
-  // cube23.rotation.z += 0.01
-  // cube24.rotation.z += 0.01
+//   cube.rotation.z += 0.01
+//   cube2.rotation.z += 0.01
+//   cube3.rotation.z += 0.01
+//   cube4.rotation.z += 0.01
+//   cube5.rotation.z += 0.01
+//   cube6.rotation.z += 0.01
+//   cube7.rotation.z += 0.01
+//   cube8.rotation.z += 0.01
+//   cube9.rotation.z += 0.01
+//   cube10.rotation.z += 0.01
+//   cube11.rotation.z += 0.01
+//   cube12.rotation.z += 0.01
+//   cube13.rotation.z += 0.01
+//   cube14.rotation.z += 0.01
+//   cube15.rotation.z += 0.01
+//   cube16.rotation.z += 0.01
+//   cube17.rotation.z += 0.01
+//   cube18.rotation.z += 0.01
+//   cube19.rotation.z += 0.01
+//   cube20.rotation.z += 0.01
+//   cube21.rotation.z += 0.01
+//   cube22.rotation.z += 0.01
+//   cube23.rotation.z += 0.01
+//   cube24.rotation.z += 0.01
 // })
-var current_cube = cubes[0];
+
 $(renderer.domElement).on('mousedown', function(e) {
     isDragging = true;
-    // current_cube= cubes[rand(3,20)]
 })
 .on('mousemove', function(e) {
     //console.log(e);
@@ -491,181 +490,191 @@ $(renderer.domElement).on('mousedown', function(e) {
             ));
         var deltaRotationQuaternion2 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 10) * 0.9),
-                toRadians((deltaMove.x + 10) * 0.9),
+                toRadians(deltaMove.y * 0.9),
+                toRadians(deltaMove.x * 0.9),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion3 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 20) * 0.9),
-                toRadians((deltaMove.x + 20) * 0.9),
+                toRadians(deltaMove.y * 0.9),
+                toRadians(deltaMove.x * 0.9),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion4 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 30) * 0.9),
-                toRadians((deltaMove.x + 30) * 0.9),
+                toRadians(deltaMove.y * 0.25 + 150),
+                toRadians(deltaMove.x * 0.25 - 30 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion5 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 40) * 0.9),
-                toRadians((deltaMove.x + 40) * 0.9),
+                toRadians(deltaMove.y * 0.05 + 140),
+                toRadians(deltaMove.x * 0.05 - 40 ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion6 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 50) * 0.9),
-                toRadians((deltaMove.x + 50) * 0.9),
+                toRadians(deltaMove.y * 0.15 + 130),
+                toRadians(deltaMove.x * 0.15 - 50  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion7 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 60) * 0.9),
-                toRadians((deltaMove.x + 60) * 0.9),
+                toRadians(deltaMove.y * 0.0005 + 120),
+                toRadians(deltaMove.x * 0.0005 - 60  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion8 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 70) * 0.9),
-                toRadians((deltaMove.x + 70) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 110),
+                toRadians(deltaMove.x * 0.5 - 70  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion9 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 80) * 0.9),
-                toRadians((deltaMove.x + 80) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 100),
+                toRadians(deltaMove.x * 0.5 - 80 ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion10 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 90) * 0.9),
-                toRadians((deltaMove.x + 90) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 90),
+                toRadians(deltaMove.x * 0.5 - 90  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion11 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 100) * 0.9),
-                toRadians((deltaMove.x + 100) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 80),
+                toRadians(deltaMove.x * 0.5 - 100  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion12 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 110) * 0.9),
-                toRadians((deltaMove.x + 110) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 70),
+                toRadians(deltaMove.x * 0.5 - 110  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion13 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 120) * 0.9),
-                toRadians((deltaMove.x + 120) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 60),
+                toRadians(deltaMove.x * 0.5 - 120 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion14 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 130) * 0.9),
-                toRadians((deltaMove.x + 130) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 50),
+                toRadians(deltaMove.x * 0.5 - 130 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion15 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 140) * 0.9),
-                toRadians((deltaMove.x + 140) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 40),
+                toRadians(deltaMove.x * 0.5 - 140 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion16 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 150) * 0.9),
-                toRadians((deltaMove.x + 150) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 30),
+                toRadians(deltaMove.x * 0.5 - 150 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion17 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 160) * 0.9),
-                toRadians((deltaMove.x + 160) * 0.9),
+                toRadians(deltaMove.y * 0.5 + 20),
+                toRadians(deltaMove.x * 0.5 - 160 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion18 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-               toRadians((deltaMove.y + 170) * 0.9),
-                toRadians((deltaMove.x + 170) * 0.9),
+                toRadians(deltaMove.y * 0.5 +10),
+                toRadians(deltaMove.x * 0.5 - 170 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion19 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 180) * 0.9),
-                toRadians((deltaMove.x + 180) * 0.9),
+                toRadians(deltaMove.y * 0.5 -10),
+                toRadians(deltaMove.x * 0.5 - 180 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion20 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 190) * 0.9),
-                toRadians((deltaMove.x + 190) * 0.9),
+                toRadians(deltaMove.y * 0.5 -20),
+                toRadians(deltaMove.x * 0.5 - 190 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion21 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 200) * 0.9),
-                toRadians((deltaMove.x + 200) * 0.9),
+                toRadians(deltaMove.y * 0.5 -30),
+                toRadians(deltaMove.x * 0.5 - 200 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion22 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 210) * 0.9),
-                toRadians((deltaMove.x + 210) * 0.9),
+                toRadians(deltaMove.y * 0.5 -40),
+                toRadians(deltaMove.x * 0.5 - 210 ),
                 0,
                 'XYZ'
             ));
 
         var deltaRotationQuaternion23 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 220) * 0.9),
-                toRadians((deltaMove.x + 220) * 0.9),
+                toRadians(deltaMove.y * 0.5 -50),
+                toRadians(deltaMove.x * 0.5 - 220 ),
                 0,
                 'XYZ'
             ));
 
         var deltaRotationQuaternion24 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians((deltaMove.y + 230) * 0.9),
-                toRadians((deltaMove.x + 230) * 0.9),
+                toRadians(deltaMove.y * 0.5 -60),
+                toRadians(deltaMove.x * 0.5 - 230 ),
                 0,
                 'XYZ'
             ));
-      //cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
-      current_cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
-      cubes[2].quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
-      cubes[3].quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
-      cubes[4].quaternion.multiplyQuaternions(deltaRotationQuaternion4, cube.quaternion);
-      cubes[5].quaternion.multiplyQuaternions(deltaRotationQuaternion5, cube.quaternion);
-      cubes[6].quaternion.multiplyQuaternions(deltaRotationQuaternion6, cube.quaternion);
-      cubes[7].quaternion.multiplyQuaternions(deltaRotationQuaternion7, cube.quaternion);
-      cubes[8].quaternion.multiplyQuaternions(deltaRotationQuaternion8, cube.quaternion);
-      cubes[9].quaternion.multiplyQuaternions(deltaRotationQuaternion9, cube.quaternion);
-      cubes[10].quaternion.multiplyQuaternions(deltaRotationQuaternion10, cube.quaternion);
-      cubes[11].quaternion.multiplyQuaternions(deltaRotationQuaternion11, cube.quaternion);
-      cubes[12].quaternion.multiplyQuaternions(deltaRotationQuaternion12, cube.quaternion);
-      cubes[13].quaternion.multiplyQuaternions(deltaRotationQuaternion13, cube.quaternion);
+      cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+      cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+      cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+      cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube5.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube6.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube7.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube8.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube9.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube10.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube11.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube12.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube13.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube14.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube15.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube16.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube17.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube18.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube19.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube20.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube21.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+  		cube22.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube23.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+  		cube24.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
     previousMousePosition = {
         x: e.offsetX,
         y: e.offsetY
