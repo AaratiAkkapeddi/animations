@@ -380,6 +380,30 @@ var cube21 = new THREE.Mesh(geometry, material21);
 var cube22 = new THREE.Mesh(geometry, material22);
 var cube23 = new THREE.Mesh(geometry, material23);
 var cube24 = new THREE.Mesh(geometry, material24);
+cube2.rotation.x += 1
+cube3.rotation.x += 2
+cube4.rotation.x += 3
+cube5.rotation.x += 4
+cube6.rotation.x += 5
+cube7.rotation.x += 6
+cube8.rotation.x += 7
+cube9.rotation.x += 8
+cube10.rotation.x += 9
+cube11.rotation.x += 10
+cube12.rotation.x += 12
+cube13.rotation.x += 13
+cube14.rotation.x += 14
+cube15.rotation.x += 15
+cube16.rotation.x += 16
+cube17.rotation.x += 17
+cube18.rotation.x += 18
+cube19.rotation.x += 19
+cube20.rotation.x += 20
+cube21.rotation.x += 21
+cube22.rotation.x += 22
+cube23.rotation.x += 23
+cube24.rotation.x += 24
+
 scene.add(cube);
 scene.add(cube2);
 scene.add(cube3);
@@ -412,6 +436,33 @@ var previousMousePosition = {
     x: 0,
     y: 0
 };
+// $(renderer.domElement).on('mousemove',function(e){
+//   cube.rotation.z += 0.01
+//   cube2.rotation.z += 0.01
+//   cube3.rotation.z += 0.01
+//   cube4.rotation.z += 0.01
+//   cube5.rotation.z += 0.01
+//   cube6.rotation.z += 0.01
+//   cube7.rotation.z += 0.01
+//   cube8.rotation.z += 0.01
+//   cube9.rotation.z += 0.01
+//   cube10.rotation.z += 0.01
+//   cube11.rotation.z += 0.01
+//   cube12.rotation.z += 0.01
+//   cube13.rotation.z += 0.01
+//   cube14.rotation.z += 0.01
+//   cube15.rotation.z += 0.01
+//   cube16.rotation.z += 0.01
+//   cube17.rotation.z += 0.01
+//   cube18.rotation.z += 0.01
+//   cube19.rotation.z += 0.01
+//   cube20.rotation.z += 0.01
+//   cube21.rotation.z += 0.01
+//   cube22.rotation.z += 0.01
+//   cube23.rotation.z += 0.01
+//   cube24.rotation.z += 0.01
+// })
+
 $(renderer.domElement).on('mousedown', function(e) {
     isDragging = true;
 })
@@ -426,8 +477,8 @@ $(renderer.domElement).on('mousedown', function(e) {
             
         var deltaRotationQuaternion = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 0.5 + 1),
-                toRadians(deltaMove.x * 0.5 - 1),
+                toRadians(deltaMove.y * 0.9),
+                toRadians(deltaMove.x * 0.9),
                 0,
                 'XYZ'
             ));
@@ -595,29 +646,29 @@ $(renderer.domElement).on('mousedown', function(e) {
                 'XYZ'
             ));
       cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
-      cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
-      cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
-      cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion4, cube.quaternion);
-  		cube5.quaternion.multiplyQuaternions(deltaRotationQuaternion5, cube.quaternion);
-  		cube6.quaternion.multiplyQuaternions(deltaRotationQuaternion6, cube.quaternion);
-  		cube7.quaternion.multiplyQuaternions(deltaRotationQuaternion7, cube.quaternion);
-  		cube8.quaternion.multiplyQuaternions(deltaRotationQuaternion8, cube.quaternion);
-  		cube9.quaternion.multiplyQuaternions(deltaRotationQuaternion9, cube.quaternion);
-  		cube10.quaternion.multiplyQuaternions(deltaRotationQuaternion10, cube.quaternion);
-  		cube11.quaternion.multiplyQuaternions(deltaRotationQuaternion11, cube.quaternion);
-  		cube12.quaternion.multiplyQuaternions(deltaRotationQuaternion12, cube.quaternion);
-  		cube13.quaternion.multiplyQuaternions(deltaRotationQuaternion13, cube.quaternion);
-  		cube14.quaternion.multiplyQuaternions(deltaRotationQuaternion14, cube.quaternion);
-  		cube15.quaternion.multiplyQuaternions(deltaRotationQuaternion15, cube.quaternion);
-  		cube16.quaternion.multiplyQuaternions(deltaRotationQuaternion16, cube.quaternion);
-  		cube17.quaternion.multiplyQuaternions(deltaRotationQuaternion17, cube.quaternion);
-  		cube18.quaternion.multiplyQuaternions(deltaRotationQuaternion18, cube.quaternion);
-  		cube19.quaternion.multiplyQuaternions(deltaRotationQuaternion19, cube.quaternion);
-  		cube20.quaternion.multiplyQuaternions(deltaRotationQuaternion20, cube.quaternion);
-  		cube21.quaternion.multiplyQuaternions(deltaRotationQuaternion21, cube.quaternion);
-  		cube22.quaternion.multiplyQuaternions(deltaRotationQuaternion22, cube.quaternion);
-  		cube23.quaternion.multiplyQuaternions(deltaRotationQuaternion23, cube.quaternion);
-  		cube24.quaternion.multiplyQuaternions(deltaRotationQuaternion24, cube.quaternion);
+      cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+      cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+      cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube5.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube6.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube7.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube8.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube9.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube10.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube11.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube12.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube13.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube14.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube15.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube16.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube17.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube18.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube19.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube20.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube21.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube22.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube23.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+  		cube24.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
     previousMousePosition = {
         x: e.offsetX,
         y: e.offsetY
@@ -625,9 +676,9 @@ $(renderer.domElement).on('mousedown', function(e) {
 });
 /* */
 
-$(document).on('mouseup', function(e) {
-    isDragging = false;
-});
+// $(document).on('mouseup', function(e) {
+//     isDragging = false;
+// });
 
 camera.position.z = 10;
 var render = function () {
