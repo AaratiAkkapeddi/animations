@@ -1,6 +1,6 @@
 var scene = new THREE.Scene();
 scene.background = new THREE.Color( 0x000000);
-var camera = new THREE.PerspectiveCamera(50, 500 / 400, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
 function toRadians(angle) {
 	return angle * (Math.PI / 180);
 }
@@ -16,7 +16,7 @@ document.body.appendChild(renderer.domElement);
 const loader = new THREE.TextureLoader().load( "motivate.png" );
 loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
-loader.offset.set(0,-0.2);
+loader.offset.set(0,-0.25);
 loader.repeat.set( 22, 1 );
 loader.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader.magFilter = THREE.NearestFilter;
@@ -31,7 +31,7 @@ loader.minFilter = THREE.LinearMipMapLinearFilter;
 const loader2 = new THREE.TextureLoader().load( "inspire.png" );
 loader2.wrapS = THREE.RepeatWrapping;
 loader2.wrapT = THREE.RepeatWrapping;
-loader2.offset.set(0,-0.2);
+loader2.offset.set(0,-0.25);
 loader2.repeat.set( 22, 1 );
 loader2.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader2.magFilter = THREE.NearestFilter;
@@ -45,7 +45,7 @@ loader2.minFilter = THREE.LinearMipMapLinearFilter;
 const loader3 = new THREE.TextureLoader().load( "compose.png" );
 loader3.wrapS = THREE.RepeatWrapping;
 loader3.wrapT = THREE.RepeatWrapping;
-loader3.offset.set(0,-0.2);
+loader3.offset.set(0,-0.25);
 loader3.repeat.set( 22, 1 );
 loader3.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader3.magFilter = THREE.NearestFilter;
@@ -58,7 +58,7 @@ loader3.minFilter = THREE.LinearMipMapLinearFilter;
 const loader4 = new THREE.TextureLoader().load( "empathize.png" );
 loader4.wrapS = THREE.RepeatWrapping;
 loader4.wrapT = THREE.RepeatWrapping;
-loader4.offset.set(0,-0.2);
+loader4.offset.set(0,-0.25);
 loader4.repeat.set( 20, 1 );
 loader4.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader4.magFilter = THREE.NearestFilter;
@@ -74,7 +74,7 @@ loader4.minFilter = THREE.LinearMipMapLinearFilter;
 const loader5 = new THREE.TextureLoader().load( "illuminate.png" );
 loader5.wrapS = THREE.RepeatWrapping;
 loader5.wrapT = THREE.RepeatWrapping;
-loader5.offset.set(0,-0.2);
+loader5.offset.set(0,-0.25);
 loader5.repeat.set( 20, 1 );
 loader5.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader5.magFilter = THREE.NearestFilter;
@@ -88,7 +88,7 @@ loader5.minFilter = THREE.LinearMipMapLinearFilter;
 const loader6 = new THREE.TextureLoader().load( "decipher.png" );
 loader6.wrapS = THREE.RepeatWrapping;
 loader6.wrapT = THREE.RepeatWrapping;
-loader6.offset.set(0,-0.2);
+loader6.offset.set(0,-0.25);
 loader6.repeat.set( 20, 1 );
 loader6.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader6.magFilter = THREE.NearestFilter;
@@ -102,7 +102,7 @@ loader6.minFilter = THREE.LinearMipMapLinearFilter;
 const loader7 = new THREE.TextureLoader().load( "wonder.png" );
 loader7.wrapS = THREE.RepeatWrapping;
 loader7.wrapT = THREE.RepeatWrapping;
-loader7.offset.set(0,-0.2);
+loader7.offset.set(0,-0.25);
 loader7.repeat.set( 20, 1 );
 loader7.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader7.magFilter = THREE.NearestFilter;
@@ -116,7 +116,7 @@ loader7.minFilter = THREE.LinearMipMapLinearFilter;
 const loader8 = new THREE.TextureLoader().load( "observe.png" );
 loader8.wrapS = THREE.RepeatWrapping;
 loader8.wrapT = THREE.RepeatWrapping;
-loader8.offset.set(0,-0.2);
+loader8.offset.set(0,-0.25);
 loader8.repeat.set( 20, 1 );
 loader8.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader8.magFilter = THREE.NearestFilter;
@@ -130,7 +130,7 @@ loader8.minFilter = THREE.LinearMipMapLinearFilter;
 const loader9 = new THREE.TextureLoader().load( "research.png" );
 loader9.wrapS = THREE.RepeatWrapping;
 loader9.wrapT = THREE.RepeatWrapping;
-loader9.offset.set(0,-0.2);
+loader9.offset.set(0,-0.25);
 loader9.repeat.set( 20, 1 );
 loader9.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader9.magFilter = THREE.NearestFilter;
@@ -144,7 +144,7 @@ loader9.minFilter = THREE.LinearMipMapLinearFilter;
 const loader10 = new THREE.TextureLoader().load( "discuss.png" );
 loader10.wrapS = THREE.RepeatWrapping;
 loader10.wrapT = THREE.RepeatWrapping;
-loader10.offset.set(0,-0.2);
+loader10.offset.set(0,-0.25);
 loader10.repeat.set( 20, 1 );
 loader10.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader10.magFilter = THREE.NearestFilter;
@@ -159,7 +159,7 @@ loader10.minFilter = THREE.LinearMipMapLinearFilter;
 const loader11 = new THREE.TextureLoader().load( "intrigue.png" );
 loader11.wrapS = THREE.RepeatWrapping;
 loader11.wrapT = THREE.RepeatWrapping;
-loader11.offset.set(0,-0.2);
+loader11.offset.set(0,-0.25);
 loader11.repeat.set( 20, 1 );
 loader11.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader11.magFilter = THREE.NearestFilter;
@@ -173,7 +173,7 @@ loader11.minFilter = THREE.LinearMipMapLinearFilter;
 const loader12 = new THREE.TextureLoader().load( "challenge.png" );
 loader12.wrapS = THREE.RepeatWrapping;
 loader12.wrapT = THREE.RepeatWrapping;
-loader12.offset.set(0,-0.2);
+loader12.offset.set(0,-0.25);
 loader12.repeat.set( 20, 1 );
 loader12.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader12.magFilter = THREE.NearestFilter;
@@ -187,7 +187,7 @@ loader12.minFilter = THREE.LinearMipMapLinearFilter;
 const loader13 = new THREE.TextureLoader().load( "explore.png" );
 loader13.wrapS = THREE.RepeatWrapping;
 loader13.wrapT = THREE.RepeatWrapping;
-loader13.offset.set(0,-0.2);
+loader13.offset.set(0,-0.25);
 loader13.repeat.set( 20, 1 );
 loader13.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader13.magFilter = THREE.NearestFilter;
@@ -201,7 +201,7 @@ loader13.minFilter = THREE.LinearMipMapLinearFilter;
 const loader14 = new THREE.TextureLoader().load( "imagine.png" );
 loader14.wrapS = THREE.RepeatWrapping;
 loader14.wrapT = THREE.RepeatWrapping;
-loader14.offset.set(0,-0.2);
+loader14.offset.set(0,-0.25);
 loader14.repeat.set( 20, 1 );
 loader14.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader14.magFilter = THREE.NearestFilter;
@@ -215,7 +215,7 @@ loader14.minFilter = THREE.LinearMipMapLinearFilter;
 const loader15 = new THREE.TextureLoader().load( "provoke.png" );
 loader15.wrapS = THREE.RepeatWrapping;
 loader15.wrapT = THREE.RepeatWrapping;
-loader15.offset.set(0,-0.2);
+loader15.offset.set(0,-0.25);
 loader15.repeat.set( 20, 1 );
 loader15.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader15.magFilter = THREE.NearestFilter;
@@ -229,7 +229,7 @@ loader15.minFilter = THREE.LinearMipMapLinearFilter;
 const loader16 = new THREE.TextureLoader().load( "unlearn.png" );
 loader16.wrapS = THREE.RepeatWrapping;
 loader16.wrapT = THREE.RepeatWrapping;
-loader16.offset.set(0,-0.2);
+loader16.offset.set(0,-0.25);
 loader16.repeat.set( 20, 1 );
 loader16.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader16.magFilter = THREE.NearestFilter;
@@ -243,7 +243,7 @@ loader16.minFilter = THREE.LinearMipMapLinearFilter;
 const loader17 = new THREE.TextureLoader().load( "debate.png" );
 loader17.wrapS = THREE.RepeatWrapping;
 loader17.wrapT = THREE.RepeatWrapping;
-loader17.offset.set(0,-0.2);
+loader17.offset.set(0,-0.25);
 loader17.repeat.set( 20, 1 );
 loader17.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader17.magFilter = THREE.NearestFilter;
@@ -256,7 +256,7 @@ loader17.minFilter = THREE.LinearMipMapLinearFilter;
 const loader18 = new THREE.TextureLoader().load( "reflect.png" );
 loader18.wrapS = THREE.RepeatWrapping;
 loader18.wrapT = THREE.RepeatWrapping;
-loader18.offset.set(0,-0.2);
+loader18.offset.set(0,-0.25);
 loader18.repeat.set( 20, 1 );
 loader18.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader18.magFilter = THREE.NearestFilter;
@@ -270,7 +270,7 @@ loader18.minFilter = THREE.LinearMipMapLinearFilter;
 const loader19 = new THREE.TextureLoader().load( "create.png" );
 loader19.wrapS = THREE.RepeatWrapping;
 loader19.wrapT = THREE.RepeatWrapping;
-loader19.offset.set(0,-0.2);
+loader19.offset.set(0,-0.25);
 loader19.repeat.set( 20, 1 );
 loader19.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader19.magFilter = THREE.NearestFilter;
@@ -284,7 +284,7 @@ loader19.minFilter = THREE.LinearMipMapLinearFilter;
 const loader20 = new THREE.TextureLoader().load( "understand.png" );
 loader20.wrapS = THREE.RepeatWrapping;
 loader20.wrapT = THREE.RepeatWrapping;
-loader20.offset.set(0,-0.2);
+loader20.offset.set(0,-0.25);
 loader20.repeat.set( 20, 1 );
 loader20.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader20.magFilter = THREE.NearestFilter;
@@ -298,7 +298,7 @@ loader20.minFilter = THREE.LinearMipMapLinearFilter;
 const loader21 = new THREE.TextureLoader().load( "investigate.png" );
 loader21.wrapS = THREE.RepeatWrapping;
 loader21.wrapT = THREE.RepeatWrapping;
-loader21.offset.set(0,-0.2);
+loader21.offset.set(0,-0.25);
 loader21.repeat.set( 20, 1 );
 loader21.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader21.magFilter = THREE.NearestFilter;
@@ -312,7 +312,7 @@ loader21.minFilter = THREE.LinearMipMapLinearFilter;
 const loader22 = new THREE.TextureLoader().load( "invent.png" );
 loader22.wrapS = THREE.RepeatWrapping;
 loader22.wrapT = THREE.RepeatWrapping;
-loader22.offset.set(0,-0.2);
+loader22.offset.set(0,-0.25);
 loader22.repeat.set( 20, 1 );
 loader22.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader22.magFilter = THREE.NearestFilter;
@@ -326,7 +326,7 @@ loader22.minFilter = THREE.LinearMipMapLinearFilter;
 const loader23 = new THREE.TextureLoader().load( "grow.png" );
 loader23.wrapS = THREE.RepeatWrapping;
 loader23.wrapT = THREE.RepeatWrapping;
-loader23.offset.set(0,-0.2);
+loader23.offset.set(0,-0.25);
 loader23.repeat.set( 20, 1 );
 loader23.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader23.magFilter = THREE.NearestFilter;
@@ -340,7 +340,7 @@ loader23.minFilter = THREE.LinearMipMapLinearFilter;
 const loader24 = new THREE.TextureLoader().load( "discover.png" );
 loader24.wrapS = THREE.RepeatWrapping;
 loader24.wrapT = THREE.RepeatWrapping;
-loader24.offset.set(0,-0.2);
+loader24.offset.set(0,-0.25);
 loader24.repeat.set( 20, 1 );
 loader24.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader24.magFilter = THREE.NearestFilter;
@@ -426,178 +426,178 @@ $(renderer.domElement).on('mousedown', function(e) {
             
         var deltaRotationQuaternion = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 1),
-                toRadians(deltaMove.x *1 - 1),
+                toRadians(deltaMove.y * 0.5 + 1),
+                toRadians(deltaMove.x * 0.5 - 1),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion2 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 170),
-                toRadians(deltaMove.x  * 1 - 10),
+                toRadians(deltaMove.y * 0.05 + 170),
+                toRadians(deltaMove.x * 0.05 - 10),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion3 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 160),
-                toRadians(deltaMove.x * 1 - 20),
+                toRadians(deltaMove.y * 0.005 + 160),
+                toRadians(deltaMove.x * 0.005 - 20),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion4 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 150),
-                toRadians(deltaMove.x * 1 - 30 ),
+                toRadians(deltaMove.y * 0.25 + 150),
+                toRadians(deltaMove.x * 0.25 - 30 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion5 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 140),
-                toRadians(deltaMove.x * 1 - 40 ),
+                toRadians(deltaMove.y * 0.05 + 140),
+                toRadians(deltaMove.x * 0.05 - 40 ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion6 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 130),
-                toRadians(deltaMove.x * 1 - 50  ),
+                toRadians(deltaMove.y * 0.15 + 130),
+                toRadians(deltaMove.x * 0.15 - 50  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion7 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 120),
-                toRadians(deltaMove.x * 1 - 60  ),
+                toRadians(deltaMove.y * 0.0005 + 120),
+                toRadians(deltaMove.x * 0.0005 - 60  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion8 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 110),
-                toRadians(deltaMove.x * 1 - 70  ),
+                toRadians(deltaMove.y * 0.5 + 110),
+                toRadians(deltaMove.x * 0.5 - 70  ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion9 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 100),
-                toRadians(deltaMove.x * 1 - 80 ),
+                toRadians(deltaMove.y * 0.5 + 100),
+                toRadians(deltaMove.x * 0.5 - 80 ),
                 0,
                 'XYZ'
             ));
          var deltaRotationQuaternion10 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 90),
-                toRadians(deltaMove.x * 1 - 90  ),
+                toRadians(deltaMove.y * 0.5 + 90),
+                toRadians(deltaMove.x * 0.5 - 90  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion11 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 80),
-                toRadians(deltaMove.x * 1 - 100  ),
+                toRadians(deltaMove.y * 0.5 + 80),
+                toRadians(deltaMove.x * 0.5 - 100  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion12 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 70),
-                toRadians(deltaMove.x * 1 - 110  ),
+                toRadians(deltaMove.y * 0.5 + 70),
+                toRadians(deltaMove.x * 0.5 - 110  ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion13 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 60),
-                toRadians(deltaMove.x * 1 - 120 ),
+                toRadians(deltaMove.y * 0.5 + 60),
+                toRadians(deltaMove.x * 0.5 - 120 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion14 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 50),
-                toRadians(deltaMove.x * 1 - 130 ),
+                toRadians(deltaMove.y * 0.5 + 50),
+                toRadians(deltaMove.x * 0.5 - 130 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion15 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 40),
-                toRadians(deltaMove.x * 1 - 140 ),
+                toRadians(deltaMove.y * 0.5 + 40),
+                toRadians(deltaMove.x * 0.5 - 140 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion16 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 30),
-                toRadians(deltaMove.x * 1 - 150 ),
+                toRadians(deltaMove.y * 0.5 + 30),
+                toRadians(deltaMove.x * 0.5 - 150 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion17 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 + 20),
-                toRadians(deltaMove.x * 1 - 160 ),
+                toRadians(deltaMove.y * 0.5 + 20),
+                toRadians(deltaMove.x * 0.5 - 160 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion18 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 +10),
-                toRadians(deltaMove.x * 1 - 170 ),
+                toRadians(deltaMove.y * 0.5 +10),
+                toRadians(deltaMove.x * 0.5 - 170 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion19 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -10),
-                toRadians(deltaMove.x * 1 - 180 ),
+                toRadians(deltaMove.y * 0.5 -10),
+                toRadians(deltaMove.x * 0.5 - 180 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion20 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -20),
-                toRadians(deltaMove.x * 1 - 190 ),
+                toRadians(deltaMove.y * 0.5 -20),
+                toRadians(deltaMove.x * 0.5 - 190 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion21 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -30),
-                toRadians(deltaMove.x * 1 - 200 ),
+                toRadians(deltaMove.y * 0.5 -30),
+                toRadians(deltaMove.x * 0.5 - 200 ),
                 0,
                 'XYZ'
             ));
         var deltaRotationQuaternion22 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -40),
-                toRadians(deltaMove.x * 1 - 210 ),
+                toRadians(deltaMove.y * 0.5 -40),
+                toRadians(deltaMove.x * 0.5 - 210 ),
                 0,
                 'XYZ'
             ));
 
         var deltaRotationQuaternion23 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -50),
-                toRadians(deltaMove.x * 1 - 220 ),
+                toRadians(deltaMove.y * 0.5 -50),
+                toRadians(deltaMove.x * 0.5 - 220 ),
                 0,
                 'XYZ'
             ));
 
         var deltaRotationQuaternion24 = new THREE.Quaternion()
             .setFromEuler(new THREE.Euler(
-                toRadians(deltaMove.y * 1 -60),
-                toRadians(deltaMove.x * 1 - 230 ),
+                toRadians(deltaMove.y * 0.5 -60),
+                toRadians(deltaMove.x * 0.5 - 230 ),
                 0,
                 'XYZ'
             ));
-        cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
-        cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
-        cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
-        cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion4, cube.quaternion);
+      cube.quaternion.multiplyQuaternions(deltaRotationQuaternion, cube.quaternion);
+      cube2.quaternion.multiplyQuaternions(deltaRotationQuaternion2, cube.quaternion);
+      cube3.quaternion.multiplyQuaternions(deltaRotationQuaternion3, cube.quaternion);
+      cube4.quaternion.multiplyQuaternions(deltaRotationQuaternion4, cube.quaternion);
   		cube5.quaternion.multiplyQuaternions(deltaRotationQuaternion5, cube.quaternion);
   		cube6.quaternion.multiplyQuaternions(deltaRotationQuaternion6, cube.quaternion);
   		cube7.quaternion.multiplyQuaternions(deltaRotationQuaternion7, cube.quaternion);
@@ -633,7 +633,30 @@ camera.position.z = 10;
 var render = function () {
     requestAnimationFrame(render);
 
-    // cube.rotation.y += 0.01;
+
+    cube.rotation.y += 0.001;
+    cube2.rotation.y += 0.002;
+    cube3.rotation.y += 0.003;
+    cube4.rotation.y += 0.004;
+    cube5.rotation.y += 0.005;
+    cube6.rotation.y += 0.006;
+    cube7.rotation.y += 0.007;
+    cube8.rotation.y += 0.008;
+    cube9.rotation.y += 0.009;
+    cube10.rotation.y += 0.0012;
+    cube11.rotation.y += 0.0013;
+    cube12.rotation.y += 0.0014;
+    cube13.rotation.y += 0.0015;
+    cube14.rotation.y += 0.0016;
+    cube15.rotation.y += 0.0017;
+    cube16.rotation.y += 0.0018;
+    cube18.rotation.y += 0.0019;
+    cube19.rotation.y += 0.002;
+    cube20.rotation.y += 0.011;
+    cube21.rotation.y += 0.012;
+    cube22.rotation.y += 0.013;
+    cube23.rotation.y += 0.014;
+    cube24.rotation.y += 0.015;
 
     renderer.render(scene, camera);
 };
