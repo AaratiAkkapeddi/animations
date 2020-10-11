@@ -4,7 +4,10 @@ var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
 function toRadians(angle) {
 	return angle * (Math.PI / 180);
 }
-
+function rand(min, max) {
+  let randomNum = Math.random() * (max - min) + min;
+  return Math.floor(randomNum);
+}
 function toDegrees(angle) {
 	return angle * (180 / Math.PI);
 }
@@ -680,10 +683,13 @@ $(renderer.domElement).on('mousedown', function(e) {
 /* */
 
 $(document).on('mouseup', function(e) {
+  var myrand = rand(0,5)
+  var myrand2 = rand(0,5)
+
     for (var i = cubes.length - 1; i >= 0; i--) {
-      cubes[i].rotation.x = positions[i][0]
+      cubes[i].rotation.x = positions[i][0]+ myrand
       cubes[i].rotation.y = positions[i][1]
-      cubes[i].rotation.z = positions[i][2]
+      cubes[i].rotation.z = positions[i][2]+ myrand2
     }
 });
 
