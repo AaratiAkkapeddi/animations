@@ -1,7 +1,7 @@
 var scene = new THREE.Scene();
 scene.background = new THREE.Color( 0x000000, 0);
 // var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
-var camera = new THREE.OrthographicCamera( 500 / - 150, 500 / 150, 450 / 150, 450 / - 150, 10, 100 );
+var camera = new THREE.OrthographicCamera( 500 / - 150, 500 / 150, 450 / 150, 450 / - 150, 10, -100 );
 function toRadians(angle) {
 	return angle * (Math.PI / 180);
 }
