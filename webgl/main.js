@@ -1,5 +1,5 @@
 var scene = new THREE.Scene();
-scene.background = new THREE.Color( 0x000000);
+scene.background = new THREE.Color( 0x000000, 0);
 var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
 function toRadians(angle) {
 	return angle * (Math.PI / 180);
@@ -11,8 +11,9 @@ function rand(min, max) {
 function toDegrees(angle) {
 	return angle * (180 / Math.PI);
 }
-var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer( { alpha: true } );
 renderer.setSize(800, 700);
+renderer.setClearColor( 0x000000, 0 );
 renderer.sortObjects = false;
 document.body.appendChild(renderer.domElement);
 
@@ -29,7 +30,7 @@ loader.minFilter = THREE.LinearMipMapLinearFilter;
   const material = new THREE.MeshBasicMaterial({
     map: loader,
     side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 const loader2 = new THREE.TextureLoader().load( "inspire.png" );
 loader2.wrapS = THREE.RepeatWrapping;
@@ -43,7 +44,7 @@ loader2.minFilter = THREE.LinearMipMapLinearFilter;
   const material2 = new THREE.MeshBasicMaterial({
     map: loader2,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 const loader3 = new THREE.TextureLoader().load( "compose.png" );
 loader3.wrapS = THREE.RepeatWrapping;
@@ -56,7 +57,7 @@ loader3.minFilter = THREE.LinearMipMapLinearFilter;
   const material3 = new THREE.MeshBasicMaterial({
     map: loader3,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 const loader4 = new THREE.TextureLoader().load( "empathize.png" );
 loader4.wrapS = THREE.RepeatWrapping;
@@ -69,7 +70,7 @@ loader4.minFilter = THREE.LinearMipMapLinearFilter;
   const material4 = new THREE.MeshBasicMaterial({
     map: loader4,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 
@@ -85,7 +86,7 @@ loader5.minFilter = THREE.LinearMipMapLinearFilter;
   const material5 = new THREE.MeshBasicMaterial({
     map: loader5,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader6 = new THREE.TextureLoader().load( "decipher.png" );
@@ -99,7 +100,7 @@ loader6.minFilter = THREE.LinearMipMapLinearFilter;
   const material6 = new THREE.MeshBasicMaterial({
     map: loader6,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader7 = new THREE.TextureLoader().load( "wonder.png" );
@@ -113,7 +114,7 @@ loader7.minFilter = THREE.LinearMipMapLinearFilter;
   const material7 = new THREE.MeshBasicMaterial({
     map: loader7,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader8 = new THREE.TextureLoader().load( "observe.png" );
@@ -127,7 +128,7 @@ loader8.minFilter = THREE.LinearMipMapLinearFilter;
   const material8 = new THREE.MeshBasicMaterial({
     map: loader8,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader9 = new THREE.TextureLoader().load( "research.png" );
@@ -141,7 +142,7 @@ loader9.minFilter = THREE.LinearMipMapLinearFilter;
   const material9 = new THREE.MeshBasicMaterial({
     map: loader9,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader10 = new THREE.TextureLoader().load( "discuss.png" );
@@ -155,7 +156,7 @@ loader10.minFilter = THREE.LinearMipMapLinearFilter;
   const material10 = new THREE.MeshBasicMaterial({
     map: loader10,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 
@@ -170,7 +171,7 @@ loader11.minFilter = THREE.LinearMipMapLinearFilter;
   const material11 = new THREE.MeshBasicMaterial({
     map: loader11,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader12 = new THREE.TextureLoader().load( "challenge.png" );
@@ -184,7 +185,7 @@ loader12.minFilter = THREE.LinearMipMapLinearFilter;
   const material12 = new THREE.MeshBasicMaterial({
     map: loader12,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader13 = new THREE.TextureLoader().load( "explore.png" );
@@ -198,7 +199,7 @@ loader13.minFilter = THREE.LinearMipMapLinearFilter;
   const material13 = new THREE.MeshBasicMaterial({
     map: loader13,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader14 = new THREE.TextureLoader().load( "imagine.png" );
@@ -212,7 +213,7 @@ loader14.minFilter = THREE.LinearMipMapLinearFilter;
   const material14 = new THREE.MeshBasicMaterial({
     map: loader14,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader15 = new THREE.TextureLoader().load( "provoke.png" );
@@ -226,7 +227,7 @@ loader15.minFilter = THREE.LinearMipMapLinearFilter;
   const material15 = new THREE.MeshBasicMaterial({
     map: loader15,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader16 = new THREE.TextureLoader().load( "unlearn.png" );
@@ -240,7 +241,7 @@ loader16.minFilter = THREE.LinearMipMapLinearFilter;
   const material16 = new THREE.MeshBasicMaterial({
     map: loader16,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader17 = new THREE.TextureLoader().load( "debate.png" );
@@ -254,7 +255,7 @@ loader17.minFilter = THREE.LinearMipMapLinearFilter;
   const material17 = new THREE.MeshBasicMaterial({
     map: loader17,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 const loader18 = new THREE.TextureLoader().load( "reflect.png" );
 loader18.wrapS = THREE.RepeatWrapping;
@@ -267,7 +268,7 @@ loader18.minFilter = THREE.LinearMipMapLinearFilter;
   const material18 = new THREE.MeshBasicMaterial({
     map: loader18,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader19 = new THREE.TextureLoader().load( "create.png" );
@@ -281,7 +282,7 @@ loader19.minFilter = THREE.LinearMipMapLinearFilter;
   const material19 = new THREE.MeshBasicMaterial({
     map: loader19,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader20 = new THREE.TextureLoader().load( "understand.png" );
@@ -295,7 +296,7 @@ loader20.minFilter = THREE.LinearMipMapLinearFilter;
   const material20 = new THREE.MeshBasicMaterial({
     map: loader20,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader21 = new THREE.TextureLoader().load( "investigate.png" );
@@ -309,7 +310,7 @@ loader21.minFilter = THREE.LinearMipMapLinearFilter;
   const material21 = new THREE.MeshBasicMaterial({
     map: loader21,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader22 = new THREE.TextureLoader().load( "invent.png" );
@@ -323,7 +324,7 @@ loader22.minFilter = THREE.LinearMipMapLinearFilter;
   const material22 = new THREE.MeshBasicMaterial({
     map: loader22,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader23 = new THREE.TextureLoader().load( "grow.png" );
@@ -337,7 +338,7 @@ loader23.minFilter = THREE.LinearMipMapLinearFilter;
   const material23 = new THREE.MeshBasicMaterial({
     map: loader23,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 const loader24 = new THREE.TextureLoader().load( "discover.png" );
@@ -351,7 +352,7 @@ loader24.minFilter = THREE.LinearMipMapLinearFilter;
   const material24 = new THREE.MeshBasicMaterial({
     map: loader24,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.001
+    transparent: true, opacity: 1,alphaTest: 0.2
   });
 
 
