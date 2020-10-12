@@ -1,6 +1,10 @@
 body{
 	margin:0;
 	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
 }
 canvas{
 	display: block;
