@@ -1,4 +1,6 @@
 var scene = new THREE.Scene();
+var width = $(window).width()
+var height = $(window).height()
 scene.background = new THREE.Color( 0x000000, 0);
 // var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
 var camera = new THREE.OrthographicCamera( 500 / - 150, 500 / 150, 450 / 150, 450 / - 150, 10, -100 );
@@ -13,7 +15,12 @@ function toDegrees(angle) {
 	return angle * (180 / Math.PI);
 }
 var renderer = new THREE.WebGLRenderer( { alpha: true } );
-renderer.setSize(800, 700);
+  if(width > height){
+   renderer.setSize(height, height/1.1);
+}else{
+  renderer.setSize(width, width/1.1);
+}
+
 renderer.setClearColor( 0x000000, 0 );
 renderer.sortObjects = false;
 document.body.appendChild(renderer.domElement);
@@ -435,29 +442,29 @@ var cube21 = new THREE.Mesh(geometry, materials21);
 var cube22 = new THREE.Mesh(geometry, materials22);
 var cube23 = new THREE.Mesh(geometry, materials23);
 var cube24 = new THREE.Mesh(geometry, materials24);
-cube2.rotation.x += 10
-cube3.rotation.x += 12
-cube4.rotation.x += 13
-cube5.rotation.x += 14
-cube6.rotation.x += 15
-cube7.rotation.x += 16
-cube8.rotation.x += 17
-cube9.rotation.x += 18
-cube10.rotation.x += 19
-cube11.rotation.x += 20
-cube12.rotation.x += 22
-cube13.rotation.x += 23
-cube14.rotation.x += 24
-cube15.rotation.x += 25
-cube16.rotation.x += 26
-cube17.rotation.x += 27
-cube18.rotation.x += 28
-cube19.rotation.x += 29
-cube20.rotation.x += 30
-cube21.rotation.x += 31
-cube22.rotation.x += 32
-cube23.rotation.x += 33
-cube24.rotation.x += 34
+cube2.rotation.x += 1
+cube3.rotation.x += 1.5
+cube4.rotation.x += 2
+cube5.rotation.x += 2.5
+cube6.rotation.x += 3
+cube7.rotation.x += 3.5
+cube8.rotation.x += 4
+cube9.rotation.x += 4.5
+cube10.rotation.x += 5
+cube11.rotation.x += 5.5
+cube12.rotation.x += 6
+cube13.rotation.x += 6.5
+cube14.rotation.x += 7
+cube15.rotation.x += 7.5
+cube16.rotation.x += 8
+cube17.rotation.x += 8.5
+cube18.rotation.x += 9
+cube19.rotation.x += 9.5
+cube20.rotation.x += 10
+cube21.rotation.x += 10.5
+cube22.rotation.x += 11
+cube23.rotation.x += 11.5
+cube24.rotation.x += 12
 var cubes = [cube,cube2,cube3,cube4,cube5,cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21, cube22, cube23, cube24]
 scene.add(cube);
 scene.add(cube2);
@@ -740,13 +747,13 @@ $(renderer.domElement).on('mousedown', function(e) {
 /* */
 
 $(document).on('mouseup', function(e) {
-  var myrand = rand(0,5)
-  var myrand2 = rand(0,5)
+  var myrand = rand(0,2)
+  var myrand2 = rand(0,2)
 
     for (var i = cubes.length - 1; i >= 0; i--) {
-      cubes[i].rotation.x = positions[i][0]+ myrand
+      cubes[i].rotation.x = positions[i][0]
       cubes[i].rotation.y = positions[i][1]
-      cubes[i].rotation.z = positions[i][2]+ myrand2
+      cubes[i].rotation.z = positions[i][2]
     }
 });
 

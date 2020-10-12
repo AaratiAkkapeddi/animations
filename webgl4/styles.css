@@ -6,4 +6,8 @@ canvas{
 	display: block;
 	margin:0 auto;
 	padding-top:12px;
+   width: 50vw;
+   height: 50vw;
+   display: block;
+
 }
