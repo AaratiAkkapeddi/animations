@@ -17,10 +17,11 @@ renderer.setClearColor( 0x000000, 0 );
 renderer.sortObjects = false;
 document.body.appendChild(renderer.domElement);
 
+ 
 const loader = new THREE.TextureLoader().load( "motivate.png" );
 loader.wrapS = THREE.RepeatWrapping;
 loader.wrapT = THREE.RepeatWrapping;
-loader.offset.set(0,-0.25);
+loader.offset.set(0,1);
 loader.repeat.set( 22, 1 );
 loader.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader.magFilter = THREE.NearestFilter;
@@ -32,10 +33,13 @@ loader.minFilter = THREE.LinearMipMapLinearFilter;
     side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.2
   });
+  const materials = [material,
+"",""]
+
 const loader2 = new THREE.TextureLoader().load( "inspire.png" );
 loader2.wrapS = THREE.RepeatWrapping;
 loader2.wrapT = THREE.RepeatWrapping;
-loader2.offset.set(0,-0.25);
+loader2.offset.set(0,1);
 loader2.repeat.set( 22, 1 );
 loader2.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader2.magFilter = THREE.NearestFilter;
@@ -46,10 +50,12 @@ loader2.minFilter = THREE.LinearMipMapLinearFilter;
      side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.2
   });
+  const materials2 = [material2,
+"",""]
 const loader3 = new THREE.TextureLoader().load( "compose.png" );
 loader3.wrapS = THREE.RepeatWrapping;
 loader3.wrapT = THREE.RepeatWrapping;
-loader3.offset.set(0,-0.25);
+loader3.offset.set(0,1);
 loader3.repeat.set( 22, 1 );
 loader3.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader3.magFilter = THREE.NearestFilter;
@@ -59,10 +65,12 @@ loader3.minFilter = THREE.LinearMipMapLinearFilter;
      side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.2
   });
+  const materials3 = [material3,
+"",""]
 const loader4 = new THREE.TextureLoader().load( "empathize.png" );
 loader4.wrapS = THREE.RepeatWrapping;
 loader4.wrapT = THREE.RepeatWrapping;
-loader4.offset.set(0,-0.25);
+loader4.offset.set(0,1);
 loader4.repeat.set( 20, 1 );
 loader4.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader4.magFilter = THREE.NearestFilter;
@@ -75,10 +83,12 @@ loader4.minFilter = THREE.LinearMipMapLinearFilter;
 
 
 
+  const materials4 = [material4,
+"",""]
 const loader5 = new THREE.TextureLoader().load( "illuminate.png" );
 loader5.wrapS = THREE.RepeatWrapping;
 loader5.wrapT = THREE.RepeatWrapping;
-loader5.offset.set(0,-0.25);
+loader5.offset.set(0,1);
 loader5.repeat.set( 20, 1 );
 loader5.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader5.magFilter = THREE.NearestFilter;
@@ -89,10 +99,12 @@ loader5.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials5 = [material5,
+"",""]
 const loader6 = new THREE.TextureLoader().load( "decipher.png" );
 loader6.wrapS = THREE.RepeatWrapping;
 loader6.wrapT = THREE.RepeatWrapping;
-loader6.offset.set(0,-0.25);
+loader6.offset.set(0,1);
 loader6.repeat.set( 20, 1 );
 loader6.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader6.magFilter = THREE.NearestFilter;
@@ -103,10 +115,12 @@ loader6.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials6 = [material6,
+"",""]
 const loader7 = new THREE.TextureLoader().load( "wonder.png" );
 loader7.wrapS = THREE.RepeatWrapping;
 loader7.wrapT = THREE.RepeatWrapping;
-loader7.offset.set(0,-0.25);
+loader7.offset.set(0,1);
 loader7.repeat.set( 20, 1 );
 loader7.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader7.magFilter = THREE.NearestFilter;
@@ -117,10 +131,12 @@ loader7.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials7 = [material7,
+"",""]
 const loader8 = new THREE.TextureLoader().load( "observe.png" );
 loader8.wrapS = THREE.RepeatWrapping;
 loader8.wrapT = THREE.RepeatWrapping;
-loader8.offset.set(0,-0.25);
+loader8.offset.set(0,1);
 loader8.repeat.set( 20, 1 );
 loader8.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader8.magFilter = THREE.NearestFilter;
@@ -131,10 +147,12 @@ loader8.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials8 = [material8,
+"",""]
 const loader9 = new THREE.TextureLoader().load( "research.png" );
 loader9.wrapS = THREE.RepeatWrapping;
 loader9.wrapT = THREE.RepeatWrapping;
-loader9.offset.set(0,-0.25);
+loader9.offset.set(0,1);
 loader9.repeat.set( 20, 1 );
 loader9.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader9.magFilter = THREE.NearestFilter;
@@ -145,10 +163,12 @@ loader9.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials9 = [material9,
+"",""]
 const loader10 = new THREE.TextureLoader().load( "discuss.png" );
 loader10.wrapS = THREE.RepeatWrapping;
 loader10.wrapT = THREE.RepeatWrapping;
-loader10.offset.set(0,-0.25);
+loader10.offset.set(0,1);
 loader10.repeat.set( 20, 1 );
 loader10.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader10.magFilter = THREE.NearestFilter;
@@ -160,10 +180,12 @@ loader10.minFilter = THREE.LinearMipMapLinearFilter;
   });
 
 
+  const materials10 = [material10,
+"",""]
 const loader11 = new THREE.TextureLoader().load( "intrigue.png" );
 loader11.wrapS = THREE.RepeatWrapping;
 loader11.wrapT = THREE.RepeatWrapping;
-loader11.offset.set(0,-0.25);
+loader11.offset.set(0,1);
 loader11.repeat.set( 20, 1 );
 loader11.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader11.magFilter = THREE.NearestFilter;
@@ -174,10 +196,12 @@ loader11.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials11 = [material11,
+"",""]
 const loader12 = new THREE.TextureLoader().load( "challenge.png" );
 loader12.wrapS = THREE.RepeatWrapping;
 loader12.wrapT = THREE.RepeatWrapping;
-loader12.offset.set(0,-0.25);
+loader12.offset.set(0,1);
 loader12.repeat.set( 20, 1 );
 loader12.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader12.magFilter = THREE.NearestFilter;
@@ -188,10 +212,12 @@ loader12.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials12 = [material12,
+"",""]
 const loader13 = new THREE.TextureLoader().load( "explore.png" );
 loader13.wrapS = THREE.RepeatWrapping;
 loader13.wrapT = THREE.RepeatWrapping;
-loader13.offset.set(0,-0.25);
+loader13.offset.set(0,1);
 loader13.repeat.set( 20, 1 );
 loader13.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader13.magFilter = THREE.NearestFilter;
@@ -202,10 +228,12 @@ loader13.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials13 = [material13,
+"",""]
 const loader14 = new THREE.TextureLoader().load( "imagine.png" );
 loader14.wrapS = THREE.RepeatWrapping;
 loader14.wrapT = THREE.RepeatWrapping;
-loader14.offset.set(0,-0.25);
+loader14.offset.set(0,1);
 loader14.repeat.set( 20, 1 );
 loader14.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader14.magFilter = THREE.NearestFilter;
@@ -216,10 +244,12 @@ loader14.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials14 = [material14,
+"",""]
 const loader15 = new THREE.TextureLoader().load( "provoke.png" );
 loader15.wrapS = THREE.RepeatWrapping;
 loader15.wrapT = THREE.RepeatWrapping;
-loader15.offset.set(0,-0.25);
+loader15.offset.set(0,1);
 loader15.repeat.set( 20, 1 );
 loader15.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader15.magFilter = THREE.NearestFilter;
@@ -230,10 +260,12 @@ loader15.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials15 = [material15,
+"",""]
 const loader16 = new THREE.TextureLoader().load( "unlearn.png" );
 loader16.wrapS = THREE.RepeatWrapping;
 loader16.wrapT = THREE.RepeatWrapping;
-loader16.offset.set(0,-0.25);
+loader16.offset.set(0,1);
 loader16.repeat.set( 20, 1 );
 loader16.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader16.magFilter = THREE.NearestFilter;
@@ -244,10 +276,12 @@ loader16.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials16 = [material16,
+"",""]
 const loader17 = new THREE.TextureLoader().load( "debate.png" );
 loader17.wrapS = THREE.RepeatWrapping;
 loader17.wrapT = THREE.RepeatWrapping;
-loader17.offset.set(0,-0.25);
+loader17.offset.set(0,1);
 loader17.repeat.set( 20, 1 );
 loader17.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader17.magFilter = THREE.NearestFilter;
@@ -257,10 +291,12 @@ loader17.minFilter = THREE.LinearMipMapLinearFilter;
      side: THREE.DoubleSide,
     transparent: true, opacity: 1,alphaTest: 0.2
   });
+  const materials17 = [material17,
+"",""]
 const loader18 = new THREE.TextureLoader().load( "reflect.png" );
 loader18.wrapS = THREE.RepeatWrapping;
 loader18.wrapT = THREE.RepeatWrapping;
-loader18.offset.set(0,-0.25);
+loader18.offset.set(0,1);
 loader18.repeat.set( 20, 1 );
 loader18.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader18.magFilter = THREE.NearestFilter;
@@ -271,10 +307,12 @@ loader18.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials18 = [material18,
+"",""]
 const loader19 = new THREE.TextureLoader().load( "create.png" );
 loader19.wrapS = THREE.RepeatWrapping;
 loader19.wrapT = THREE.RepeatWrapping;
-loader19.offset.set(0,-0.25);
+loader19.offset.set(0,1);
 loader19.repeat.set( 20, 1 );
 loader19.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader19.magFilter = THREE.NearestFilter;
@@ -285,10 +323,12 @@ loader19.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials19 = [material19,
+"",""]
 const loader20 = new THREE.TextureLoader().load( "understand.png" );
 loader20.wrapS = THREE.RepeatWrapping;
 loader20.wrapT = THREE.RepeatWrapping;
-loader20.offset.set(0,-0.25);
+loader20.offset.set(0,1);
 loader20.repeat.set( 20, 1 );
 loader20.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader20.magFilter = THREE.NearestFilter;
@@ -299,10 +339,12 @@ loader20.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials20 = [material20,
+"",""]
 const loader21 = new THREE.TextureLoader().load( "investigate.png" );
 loader21.wrapS = THREE.RepeatWrapping;
 loader21.wrapT = THREE.RepeatWrapping;
-loader21.offset.set(0,-0.25);
+loader21.offset.set(0,1);
 loader21.repeat.set( 20, 1 );
 loader21.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader21.magFilter = THREE.NearestFilter;
@@ -313,10 +355,12 @@ loader21.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials21 = [material21,
+"",""]
 const loader22 = new THREE.TextureLoader().load( "invent.png" );
 loader22.wrapS = THREE.RepeatWrapping;
 loader22.wrapT = THREE.RepeatWrapping;
-loader22.offset.set(0,-0.25);
+loader22.offset.set(0,1);
 loader22.repeat.set( 20, 1 );
 loader22.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader22.magFilter = THREE.NearestFilter;
@@ -327,10 +371,12 @@ loader22.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials22 = [material22,
+"",""]
 const loader23 = new THREE.TextureLoader().load( "grow.png" );
 loader23.wrapS = THREE.RepeatWrapping;
 loader23.wrapT = THREE.RepeatWrapping;
-loader23.offset.set(0,-0.25);
+loader23.offset.set(0,1);
 loader23.repeat.set( 20, 1 );
 loader23.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader23.magFilter = THREE.NearestFilter;
@@ -341,10 +387,12 @@ loader23.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials23 = [material23,
+"",""]
 const loader24 = new THREE.TextureLoader().load( "discover.png" );
 loader24.wrapS = THREE.RepeatWrapping;
 loader24.wrapT = THREE.RepeatWrapping;
-loader24.offset.set(0,-0.25);
+loader24.offset.set(0,1);
 loader24.repeat.set( 20, 1 );
 loader24.anisotropy = renderer.capabilities.getMaxAnisotropy();
 loader24.magFilter = THREE.NearestFilter;
@@ -355,35 +403,36 @@ loader24.minFilter = THREE.LinearMipMapLinearFilter;
     transparent: true, opacity: 1,alphaTest: 0.2
   });
 
+  const materials24 = [material24,
+"",""]
 
 
-
-var geometry = new THREE.SphereGeometry(3, 60, 60, 0, Math.PI * 2, 0, Math.PI * 2);
-
-var cube = new THREE.Mesh(geometry, material);
-var cube2 = new THREE.Mesh(geometry, material2);
-var cube3 = new THREE.Mesh(geometry, material3);
-var cube4 = new THREE.Mesh(geometry, material4);
-var cube5 = new THREE.Mesh(geometry, material5);
-var cube6 = new THREE.Mesh(geometry, material6);
-var cube7 = new THREE.Mesh(geometry, material7);
-var cube8 = new THREE.Mesh(geometry, material8);
-var cube9 = new THREE.Mesh(geometry, material9);
-var cube10 = new THREE.Mesh(geometry, material10);
-var cube11 = new THREE.Mesh(geometry, material11);
-var cube12 = new THREE.Mesh(geometry, material12);
-var cube13 = new THREE.Mesh(geometry, material13);
-var cube14 = new THREE.Mesh(geometry, material14);
-var cube15 = new THREE.Mesh(geometry, material15);
-var cube16 = new THREE.Mesh(geometry, material16);
-var cube17 = new THREE.Mesh(geometry, material17);
-var cube18 = new THREE.Mesh(geometry, material18);
-var cube19 = new THREE.Mesh(geometry, material19);
-var cube20 = new THREE.Mesh(geometry, material20);
-var cube21 = new THREE.Mesh(geometry, material21);
-var cube22 = new THREE.Mesh(geometry, material22);
-var cube23 = new THREE.Mesh(geometry, material23);
-var cube24 = new THREE.Mesh(geometry, material24);
+// var geometry = new THREE.SphereGeometry(3, 60, 60, 0, Math.PI * 2, 0, Math.PI * 2);
+var geometry = new THREE.CylinderGeometry( 3, 3, 0.2, 500 );
+var cube = new THREE.Mesh(geometry, materials);
+var cube2 = new THREE.Mesh(geometry, materials2);
+var cube3 = new THREE.Mesh(geometry, materials3);
+var cube4 = new THREE.Mesh(geometry, materials4);
+var cube5 = new THREE.Mesh(geometry, materials5);
+var cube6 = new THREE.Mesh(geometry, materials6);
+var cube7 = new THREE.Mesh(geometry, materials7);
+var cube8 = new THREE.Mesh(geometry, materials8);
+var cube9 = new THREE.Mesh(geometry, materials9);
+var cube10 = new THREE.Mesh(geometry, materials10);
+var cube11 = new THREE.Mesh(geometry, materials11);
+var cube12 = new THREE.Mesh(geometry, materials12);
+var cube13 = new THREE.Mesh(geometry, materials13);
+var cube14 = new THREE.Mesh(geometry, materials14);
+var cube15 = new THREE.Mesh(geometry, materials15);
+var cube16 = new THREE.Mesh(geometry, materials16);
+var cube17 = new THREE.Mesh(geometry, materials17);
+var cube18 = new THREE.Mesh(geometry, materials18);
+var cube19 = new THREE.Mesh(geometry, materials19);
+var cube20 = new THREE.Mesh(geometry, materials20);
+var cube21 = new THREE.Mesh(geometry, materials21);
+var cube22 = new THREE.Mesh(geometry, materials22);
+var cube23 = new THREE.Mesh(geometry, materials23);
+var cube24 = new THREE.Mesh(geometry, materials24);
 cube2.rotation.x += 10
 cube3.rotation.x += 12
 cube4.rotation.x += 13
@@ -443,32 +492,32 @@ var previousMousePosition = {
     x: 0,
     y: 0
 };
-// $(renderer.domElement).on('mousemove',function(e){
-  // cube.rotation.z += 0.01
-  // cube2.rotation.z += 0.01
-  // cube3.rotation.z += 0.01
-  // cube4.rotation.z += 0.01
-  // cube5.rotation.z += 0.01
-  // cube6.rotation.z += 0.01
-  // cube7.rotation.z += 0.01
-  // cube8.rotation.z += 0.01
-  // cube9.rotation.z += 0.01
-  // cube10.rotation.z += 0.01
-  // cube11.rotation.z += 0.01
-  // cube12.rotation.z += 0.01
-  // cube13.rotation.z += 0.01
-  // cube14.rotation.z += 0.01
-  // cube15.rotation.z += 0.01
-  // cube16.rotation.z += 0.01
-  // cube17.rotation.z += 0.01
-  // cube18.rotation.z += 0.01
-  // cube19.rotation.z += 0.01
-  // cube20.rotation.z += 0.01
-  // cube21.rotation.z += 0.01
-  // cube22.rotation.z += 0.01
-  // cube23.rotation.z += 0.01
-  // cube24.rotation.z += 0.01
-// })
+$(renderer.domElement).on('mousemove',function(e){
+  cube.rotation.z += 0.01
+  cube2.rotation.z += 0.01
+  cube3.rotation.z += 0.01
+  cube4.rotation.z += 0.01
+  cube5.rotation.z += 0.01
+  cube6.rotation.z += 0.01
+  cube7.rotation.z += 0.01
+  cube8.rotation.z += 0.01
+  cube9.rotation.z += 0.01
+  cube10.rotation.z += 0.01
+  cube11.rotation.z += 0.01
+  cube12.rotation.z += 0.01
+  cube13.rotation.z += 0.01
+  cube14.rotation.z += 0.01
+  cube15.rotation.z += 0.01
+  cube16.rotation.z += 0.01
+  cube17.rotation.z += 0.01
+  cube18.rotation.z += 0.01
+  cube19.rotation.z += 0.01
+  cube20.rotation.z += 0.01
+  cube21.rotation.z += 0.01
+  cube22.rotation.z += 0.01
+  cube23.rotation.z += 0.01
+  cube24.rotation.z += 0.01
+})
 $(renderer.domElement).on('mousedown', function(e) {
     isDragging = true;
 })
@@ -704,6 +753,29 @@ var render = function () {
     requestAnimationFrame(render);
 
 
+    cube.rotation.y += 0.001;
+    cube2.rotation.y += 0.002;
+    cube3.rotation.y += 0.003;
+    cube4.rotation.y += 0.004;
+    cube5.rotation.y += 0.005;
+    cube6.rotation.y += 0.006;
+    cube7.rotation.y += 0.007;
+    cube8.rotation.y += 0.008;
+    cube9.rotation.y += 0.009;
+    cube10.rotation.y += 0.0012;
+    cube11.rotation.y += 0.0013;
+    cube12.rotation.y += 0.0014;
+    cube13.rotation.y += 0.0015;
+    cube14.rotation.y += 0.0016;
+    cube15.rotation.y += 0.0017;
+    cube16.rotation.y += 0.0018;
+    cube18.rotation.y += 0.0019;
+    cube19.rotation.y += 0.002;
+    cube20.rotation.y += 0.011;
+    cube21.rotation.y += 0.012;
+    cube22.rotation.y += 0.013;
+    cube23.rotation.y += 0.014;
+    cube24.rotation.y += 0.015;
   
 
     renderer.render(scene, camera);
