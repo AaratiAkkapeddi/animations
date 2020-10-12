@@ -479,8 +479,8 @@ $(renderer.domElement).on('mousedown', function(e) {
 .on('mousemove', function(e) {
     //console.log(e);
     var deltaMove = {
-        x: e.offsetX-previousMousePosition.x,
-        y: e.offsetY-previousMousePosition.y
+        x: e.offsetX/4-(previousMousePosition.x/4),
+        y: e.offsetY/4-(previousMousePosition.y/4)
     };
 
 
