@@ -1,6 +1,12 @@
 var scene = new THREE.Scene();
 var width = $(window).width()
 var height = $(window).height()
+if (width <= 768) {
+var test = 0.0;
+}else{
+var test = 0.2;
+}
+
 scene.background = new THREE.Color( 0x000000, 0);
 // var camera = new THREE.PerspectiveCamera(50, 500 / 450, 0.1, 1000);
 var camera = new THREE.OrthographicCamera( 500 / - 150, 500 / 150, 450 / 150, 450 / - 150, 10, -100 );
@@ -40,7 +46,7 @@ loader.minFilter = THREE.LinearMipMapLinearFilter;
   const material = new THREE.MeshBasicMaterial({
     map: loader,
     side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
   const materials = [material,
 "",""]
@@ -57,7 +63,7 @@ loader2.minFilter = THREE.LinearMipMapLinearFilter;
   const material2 = new THREE.MeshBasicMaterial({
     map: loader2,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
   const materials2 = [material2,
 "",""]
@@ -72,7 +78,7 @@ loader3.minFilter = THREE.LinearMipMapLinearFilter;
   const material3 = new THREE.MeshBasicMaterial({
     map: loader3,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
   const materials3 = [material3,
 "",""]
@@ -87,7 +93,7 @@ loader4.minFilter = THREE.LinearMipMapLinearFilter;
   const material4 = new THREE.MeshBasicMaterial({
     map: loader4,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
 
@@ -105,7 +111,7 @@ loader5.minFilter = THREE.LinearMipMapLinearFilter;
   const material5 = new THREE.MeshBasicMaterial({
     map: loader5,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials5 = [material5,
@@ -121,7 +127,7 @@ loader6.minFilter = THREE.LinearMipMapLinearFilter;
   const material6 = new THREE.MeshBasicMaterial({
     map: loader6,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials6 = [material6,
@@ -137,7 +143,7 @@ loader7.minFilter = THREE.LinearMipMapLinearFilter;
   const material7 = new THREE.MeshBasicMaterial({
     map: loader7,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials7 = [material7,
@@ -153,7 +159,7 @@ loader8.minFilter = THREE.LinearMipMapLinearFilter;
   const material8 = new THREE.MeshBasicMaterial({
     map: loader8,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials8 = [material8,
@@ -169,7 +175,7 @@ loader9.minFilter = THREE.LinearMipMapLinearFilter;
   const material9 = new THREE.MeshBasicMaterial({
     map: loader9,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials9 = [material9,
@@ -185,7 +191,7 @@ loader10.minFilter = THREE.LinearMipMapLinearFilter;
   const material10 = new THREE.MeshBasicMaterial({
     map: loader10,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
 
@@ -202,7 +208,7 @@ loader11.minFilter = THREE.LinearMipMapLinearFilter;
   const material11 = new THREE.MeshBasicMaterial({
     map: loader11,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials11 = [material11,
@@ -218,7 +224,7 @@ loader12.minFilter = THREE.LinearMipMapLinearFilter;
   const material12 = new THREE.MeshBasicMaterial({
     map: loader12,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials12 = [material12,
@@ -234,7 +240,7 @@ loader13.minFilter = THREE.LinearMipMapLinearFilter;
   const material13 = new THREE.MeshBasicMaterial({
     map: loader13,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials13 = [material13,
@@ -250,7 +256,7 @@ loader14.minFilter = THREE.LinearMipMapLinearFilter;
   const material14 = new THREE.MeshBasicMaterial({
     map: loader14,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials14 = [material14,
@@ -266,7 +272,7 @@ loader15.minFilter = THREE.LinearMipMapLinearFilter;
   const material15 = new THREE.MeshBasicMaterial({
     map: loader15,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials15 = [material15,
@@ -282,7 +288,7 @@ loader16.minFilter = THREE.LinearMipMapLinearFilter;
   const material16 = new THREE.MeshBasicMaterial({
     map: loader16,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials16 = [material16,
@@ -298,7 +304,7 @@ loader17.minFilter = THREE.LinearMipMapLinearFilter;
   const material17 = new THREE.MeshBasicMaterial({
     map: loader17,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
   const materials17 = [material17,
 "",""]
@@ -313,7 +319,7 @@ loader18.minFilter = THREE.LinearMipMapLinearFilter;
   const material18 = new THREE.MeshBasicMaterial({
     map: loader18,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials18 = [material18,
@@ -329,7 +335,7 @@ loader19.minFilter = THREE.LinearMipMapLinearFilter;
   const material19 = new THREE.MeshBasicMaterial({
     map: loader19,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials19 = [material19,
@@ -345,7 +351,7 @@ loader20.minFilter = THREE.LinearMipMapLinearFilter;
   const material20 = new THREE.MeshBasicMaterial({
     map: loader20,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials20 = [material20,
@@ -361,7 +367,7 @@ loader21.minFilter = THREE.LinearMipMapLinearFilter;
   const material21 = new THREE.MeshBasicMaterial({
     map: loader21,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials21 = [material21,
@@ -377,7 +383,7 @@ loader22.minFilter = THREE.LinearMipMapLinearFilter;
   const material22 = new THREE.MeshBasicMaterial({
     map: loader22,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials22 = [material22,
@@ -393,7 +399,7 @@ loader23.minFilter = THREE.LinearMipMapLinearFilter;
   const material23 = new THREE.MeshBasicMaterial({
     map: loader23,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials23 = [material23,
@@ -409,7 +415,7 @@ loader24.minFilter = THREE.LinearMipMapLinearFilter;
   const material24 = new THREE.MeshBasicMaterial({
     map: loader24,
      side: THREE.DoubleSide,
-    transparent: true, opacity: 1,alphaTest: 0.2
+    transparent: true, opacity: 1,alphaTest: test
   });
 
   const materials24 = [material24,
