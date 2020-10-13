@@ -28,6 +28,9 @@ img{
 @media (max-width:768px) {
 	img{
 		width: 100vw;
+		    width: 200vw;
+    left: -50vw;
+    position: relative;
 		height:auto;
 	}
 }

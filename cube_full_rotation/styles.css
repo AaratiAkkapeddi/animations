@@ -33,6 +33,9 @@ body{
 }
 @media (max-width:768px) {
 	img{
+		    width: 200vw;
+    left: -50vw;
+    position: relative;
 		width: 100vw;
 		height:auto;
 	}
