@@ -26,6 +26,7 @@ img{
 	filter:invert(1);
 }
 body{
+	overflow: hidden;
 	text-align: center;
 	margin:0;
 	background: black;
