@@ -417,11 +417,11 @@ loader24.minFilter = THREE.LinearMipMapLinearFilter;
 
 
 // var geometry = new THREE.SphereGeometry(3, 60, 60, 0, Math.PI * 2, 0, Math.PI * 2);
-var geometry = new THREE.CylinderGeometry( 3, 3, 0.2, 20 );
-var geometry2 = new THREE.CylinderGeometry( 2.9, 2.9, 0.2, 20 );
-var geometry3 = new THREE.CylinderGeometry( 2.85, 2.85, 0.2, 20 );
-var geometry4 = new THREE.CylinderGeometry( 2.8, 2.8, 0.2, 20 );
-var geometry5 = new THREE.CylinderGeometry( 2.95, 2.95, 0.2, 20 );
+var geometry = new THREE.CylinderGeometry( 3, 3, 0.2, 100 );
+var geometry2 = new THREE.CylinderGeometry( 2.9, 2.9, 0.2, 100 );
+var geometry3 = new THREE.CylinderGeometry( 2.85, 2.85, 0.2, 100 );
+var geometry4 = new THREE.CylinderGeometry( 2.8, 2.8, 0.2, 100 );
+var geometry5 = new THREE.CylinderGeometry( 2.95, 2.95, 0.2, 100 );
 var cube = new THREE.Mesh(geometry, materials);
 var cube2 = new THREE.Mesh(geometry5, materials2);
 var cube3 = new THREE.Mesh(geometry, materials3);
