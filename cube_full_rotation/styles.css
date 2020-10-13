@@ -30,3 +30,9 @@ body{
 	margin:0;
 	background: black;
 }
+@media (max-width:768px) {
+	img{
+		width: 100vw;
+		height:auto;
+	}
+}

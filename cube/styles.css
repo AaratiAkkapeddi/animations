@@ -25,6 +25,12 @@ h1.off{
 img{
 	filter:invert(1);
 }
+@media (max-width:768px) {
+	img{
+		width: 100vw;
+		height:auto;
+	}
+}
 body{
 	text-align: center;
 	margin:0;
